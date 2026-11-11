@@ -1,10 +1,12 @@
-// 3
-const stringABCDE = "abcde abcde abcde abcde";
+// 4
+const batteryVowels = "yeoa";
 
-const resultString = stringABCDE
-  .split(" ")
-  .map((addSymbol) => "!" + addSymbol.slice(1))
-  .join(" ");
+function getStringReturn(yegtrfdoa) {
+  return yegtrfdoa
+    .toLowerCase()
+    .split("")
+    .filter((characters) => batteryVowels.includes(characters)).length;
+}
 
-console.log(resultString);
+console.log(getStringReturn("Yellow"));
 
