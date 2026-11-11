@@ -1,6 +1,8 @@
-// 5
-function checkPalindrome(string) {
-  return string.split("").reverse().join("") === string;
+// 6
+function longSearch(string) {
+  return string.split(" ").reduce((accum, word) => {
+    return word.length > accum.length ? word : accum;
+  }, "");
 }
 
-console.log(checkPalindrome("шалаш"));
+console.log(longSearch("огурец палиндром да"));
