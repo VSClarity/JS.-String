@@ -1,23 +1,10 @@
-// 2
-const fileNames = [
-  "index.html",
-  "styles.css",
-  "script.js",
-  "about.html",
-  "contact.html",
-  "home.html",
-  "blog-post-1.html",
-  "blog-post-2.html",
-  "services.html",
-  "portfolio.html",
-  "projects.html",
-  "gallery.html",
-  "faq.html",
-  "terms.html",
-  "privacy-policy.html",
-];
+// 3
+const stringABCDE = "abcde abcde abcde abcde";
 
-const htmlLinks = fileNames.filter((link) => link.endsWith(".html"));
+const resultString = stringABCDE
+  .split(" ")
+  .map((addSymbol) => "!" + addSymbol.slice(1))
+  .join(" ");
 
-console.log(htmlLinks);
+console.log(resultString);
 
