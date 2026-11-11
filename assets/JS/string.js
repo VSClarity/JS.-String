@@ -1,12 +1,6 @@
-// 4
-const batteryVowels = "yeoa";
-
-function getStringReturn(yegtrfdoa) {
-  return yegtrfdoa
-    .toLowerCase()
-    .split("")
-    .filter((characters) => batteryVowels.includes(characters)).length;
+// 5
+function checkPalindrome(string) {
+  return string.split("").reverse().join("") === string;
 }
 
-console.log(getStringReturn("Yellow"));
-
+console.log(checkPalindrome("шалаш"));
